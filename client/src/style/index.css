@@ -1,0 +1,38 @@
+.none {
+    display: none;
+}
+
+#auth-nav {
+    display: flex;
+}
+
+li>p {
+    color: white;
+    margin: auto 10px;
+}
+
+#add-icon {
+    margin: 30px;
+}
+
+#collapseExample {
+    margin: 15px auto;
+}
+
+.add-from {
+    display: inline;
+    margin: 15px;
+}
+
+#add-icon>button {
+    border: none; 
+    outline: none;
+}
+
+.nav-pagination {
+    margin-right: 20px;
+}
+
+table {
+    margin-top: 20px;
+}
