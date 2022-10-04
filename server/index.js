@@ -48,6 +48,10 @@ app.use('/auth', authRouter);
 app.use('/tasks', tasksRouter);
 app.use('/filter', filterRouter);
 
+app.use('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '..', 'client', 'build', 'index.html'));
+})
+
 app.listen(PORT, () => {
   console.log(`server started PORT: ${PORT}`);
 });
