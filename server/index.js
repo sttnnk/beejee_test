@@ -35,6 +35,8 @@ const corsOptions = {
   optionSuccessStatus:200
 }
 
+app.use(express.static(path.resolve(__dirname, '..', 'client', 'build')));
+
 app.use(cors(corsOptions))
 app.use(session(sessionConfig));
 app.use(logger('dev'));
